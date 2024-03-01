@@ -1,0 +1,14 @@
+body{
+    width: 100vh;
+    height: 100vh;
+    padding: 10px;
+    /* background-color:green ; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+button{
+    padding: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
