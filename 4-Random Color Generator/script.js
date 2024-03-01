@@ -12,11 +12,13 @@ const startButton = function (){
     interval = setInterval(colorChange,1000)
     function colorChange(){
         document.body.style.backgroundColor = randomColor()
+        document.querySelector('#start').innerHTML = `Color : ${randomColor()}`
     }
 }
 function stopButton(){
     document.body.style.backgroundColor = 'white'
     clearInterval(interval)
+    document.querySelector('#start').innerHTML = 'Start'
 }
 
 document.querySelector('#start').addEventListener('click',startButton)
