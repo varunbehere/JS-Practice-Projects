@@ -1,0 +1,54 @@
+body{
+    background-color: #212121;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    background-color: white;
+    display: flex;
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+.childContainer{
+    /* display: flex; */
+    margin: 0 20px;
+}
+#imgContainer{
+    display: flex;
+    font-stretch:normal;
+}
+#location{
+    color: grey;
+}
+#userSince, #name{
+    display: inline;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+p{
+    margin: 0 0 20px 0 ;
+}
+h4{
+    margin: 0 0 6px 0;
+}
+img{
+    width: 200px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+button{
+    margin: 50px auto;
+    font-family: sans-serif;
+    font-size: 30px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #B0E0E6;
+}
+button:hover{
+    /* color: white; */
+    /* font-weight: bolder; */
+    background-color: cadetblue;
+}
