@@ -6,7 +6,7 @@ body{
 .container{
     background-color: white;
     display: flex;
-    width: 600px;
+    width: 700px;
     height: auto;
     border-radius: 10px;
     padding: 10px;
@@ -36,7 +36,7 @@ h4{
 img{
     width: 200px;
     object-fit: contain;
-    border-radius: 50%;
+    border-radius: 60%;
 }
 button{
     margin: 50px auto;
