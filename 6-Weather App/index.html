@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="weather-app.png">
 </head>
 <body>
-    <div id  = 'container'>
-        <div id = 'heading-container'>
-            <h1>Weather App</h1>
+    <div class="weather-app">
+        <div class="search-container">
+            <input type="text" id="location-input" placeholder="Enter location...">
+            <button id="search-btn">Search</button>
+        </div>
+        <div id="weather-info">
+            <div id="location">City, Country</div>
+            <div id="temperature">Temperature: 25°C</div>
+            <div id="description">Weather: Sunny</div>
+            <div id="icon"><img id ='iconImg' src="https://www.weatherbit.io/static/img/icons/r01d.png" alt="Weather Icon"></div>
+        </div>
         
-        </div>
-        <div id = 'body-container'>
-            <input type="search" placeholder="Location"/>
-        </div>
     </div>
-
-    <script src='script.js'></script>
+    <script src="script.js"></script>
 </body>
 </html>
