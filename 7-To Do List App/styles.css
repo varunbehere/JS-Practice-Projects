@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #f5f5f5;
+    background-color: #f0f0f0;
 }
 
 #navbar {
@@ -22,8 +22,10 @@ body {
 #container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: calc(100vh - 70px);
+    gap: 20px;
+    padding: 20px;
 }
 
 .display-containers {
@@ -31,27 +33,30 @@ body {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    width: 100%;
+    max-width: 400px;
 }
 
 #add-container {
-    margin-right: 20px;
+    background-color: #f9f9f9;
 }
 
 input[type="text"] {
-    width: 100%;
+    width: calc(100% - 80px);
     height: 40px;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 5px 0 0 5px;
+    margin : 0 0 10px 0;
 }
 
 button {
-    height: 40px;
-    padding: 0 20px;
+    height: 42px;
+    width: 80px;
     font-size: 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 0 5px 5px 0;
     background-color: #3498db;
     color: white;
     cursor: pointer;
@@ -62,13 +67,28 @@ button:hover {
 }
 
 #data-container {
-    max-width: 400px;
-    overflow-y: auto;
+    background-color: #f0f0f0;
+    overflow-y: auto; /* This makes the container scrollable if content exceeds its height */
+    max-height: 400px; /* Set a maximum height for the container */
 }
 
-#data-container p {
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
+#data-container h2 {
+    margin-bottom: 15px;
+    color: #333;
 }
+
+#todo-list {
+    list-style-type: none;
+}
+
+#todo-list li {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#todo-list li:last-child {
+    margin-bottom: 0;
+}
+ 
