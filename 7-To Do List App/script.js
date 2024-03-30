@@ -9,7 +9,13 @@ addBtn.addEventListener('click', function() {
     let currdatetime = currDate.toLocaleDateString() + ' ' + currDate.getHours() + ":" + currDate.getMinutes();
     let newDataitem = document.createElement('li');
     newDataitem.innerText = `${currdatetime} - ${dataValue}`; 
-    ul.appendChild(newDataitem);
+    // ul.appendChild(newDataitem);
+    if (ul.firstChild){
+        ul.insertBefore(newDataitem,ul.firstChild)
+    }
+    else{
+        ul.appendChild(newDataitem)
+    }
 
     newDataitem.addEventListener('click', function() {
         let newElementonDone = newDataitem.cloneNode(true); 
@@ -17,7 +23,15 @@ addBtn.addEventListener('click', function() {
         let currdatetime = currDate.toLocaleDateString() + ' ' + currDate.getHours() + ":" + currDate.getMinutes();
         newElementonDone.innerText = `${currdatetime} - ${dataValue}`; 
         newElementonDone.classList.add('done-list');
-        ulondone.appendChild(newElementonDone);
+        // ulondone.appendChild(newElementonDone);
+        if (ulondone.firstChild){
+            ulondone.insertBefore(newElementonDone,ulondone.firstChild)
+        }
+        else{
+            ulondone.appendChild(newElementonDone)
+        }
+
+
         newDataitem.remove();
     });
 });
