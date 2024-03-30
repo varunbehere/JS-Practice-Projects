@@ -9,16 +9,22 @@
 <body>
     <div id="navbar">
         <h1>To Do List App</h1>
+        <div id="datetime"></div>
     </div> 
     <div id="container">
-        <div class="display-containers" id="add-container">
-            <input id = 'inputField' type="text" placeholder="Add a new task...">
+        <div class="column" id="add-container">
+            <h2>Add Task</h2>
+            <input type="text" id="taskInput" placeholder="Enter task...">
             <button id="addBtn">Add</button>
         </div>
-        <div class="display-containers" id="data-container">
-            <h2>Your To-Do List</h2>
+        <div class="column" id="todo-container">
+            <h2>To Do</h2>
             <ul id="todo-list">
-                <li>Task 1</li>
+            </ul>
+        </div>
+        <div class="column" id="done-container">
+            <h2>Done</h2>
+            <ul id="done-list">
             </ul>
         </div>
     </div>    

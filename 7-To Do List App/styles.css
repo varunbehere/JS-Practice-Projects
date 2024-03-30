@@ -1,94 +1,90 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
-body {
-    background-color: #f0f0f0;
-}
+    body {
+        background-color: #f0f0f0;
+    }
 
-#navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
-    background-color: #3498db;
-    color: white;
-    font-size: 24px;
-}
+    #navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        background-color: #3498db;
+        color: white;
+        font-size: 24px;
+        padding: 0 20px;
+    }
 
-#container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: calc(100vh - 70px);
-    gap: 20px;
-    padding: 20px;
-}
+    #datetime {
+        font-size: 16px;
+    }
 
-.display-containers {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 100%;
-    max-width: 400px;
-}
+    #container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        height: calc(100vh - 70px);
+        gap: 20px;
+        padding: 20px;
+    }
 
-#add-container {
-    background-color: #f9f9f9;
-}
+    .column {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        flex: 1;
+        max-width: 400px;
+    }
 
-input[type="text"] {
-    width: calc(100% - 80px);
-    height: 40px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
-    margin : 0 0 20px 0;
-}
+    #add-container h2,
+    #todo-container h2,
+    #done-container h2 {
+        margin-bottom: 15px;
+        color: #333;
+    }
 
-button {
-    height: 42px;
-    width: 80px;
-    font-size: 16px;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    background-color: #3498db;
-    color: white;
-    cursor: pointer;
-}
+    input[type="text"] {
+        width: calc(100% - 80px);
+        height: 40px;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px 0 0 5px;
+    }
 
-button:hover {
-    background-color: #2980b9;
-}
+    button {
+        height: 42px;
+        width: 80px;
+        font-size: 16px;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        background-color: #3498db;
+        color: white;
+        cursor: pointer;
+    }
 
-#data-container {
-    background-color: #f0f0f0;
-    overflow-y: auto; /* This makes the container scrollable if content exceeds its height */
-    max-height: 400px; /* Set a maximum height for the container */
-}
+    button:hover {
+        background-color: #2980b9;
+    }
 
-#data-container h2 {
-    margin-bottom: 15px;
-    color: #333;
-}
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
 
-#todo-list {
-    list-style-type: none;
-}
-
-#todo-list li {
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-#todo-list li:last-child {
-    margin-bottom: 0;
-}
- 
+    li {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    .done-list {
+        text-decoration: line-through;
+        color: #999; 
+    }
