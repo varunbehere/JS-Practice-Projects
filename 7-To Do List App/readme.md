@@ -5,3 +5,7 @@
 
 To view how it looks and works 
 [Click Me !](https://js-practice-projects.vercel.app/)
+<br/>
+<br/>
+
+**_Note :_** This app does not have any database.
